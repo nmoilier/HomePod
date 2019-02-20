@@ -1,0 +1,331 @@
+@font-face{
+  font-family: 'sftext';
+  src:url("../fonts/SF-Pro-Text-Regular.otf");
+}
+@font-face{
+  font-family: 'sfdisplay';
+  src:url("../fonts/SF-Pro-Display-Regular.otf");
+}
+@font-face{
+  font-family: 'sfdisplayb';
+  src:url("../fonts/SF-Pro-Display-Semibold.otf");
+}
+
+/* Normalize / main tags */
+body{
+  overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "sfdisplayb";
+  color: #333333;
+}
+p{
+  font-family: "sftext"
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a{
+  font-family: "sfdisplay"
+}
+a.btn-primary{
+  background-image: linear-gradient(#42a1ec, #0070c9);
+  border:solid 1px #0077cc;
+}
+a.btn-primary.btn-lg{
+  padding:3px 50px;
+}
+a.btn-buy{
+  background-image: linear-gradient(#42a1ec, #0070c9);
+  border:solid 1px #0077cc;
+  color:white;
+  border-radius: 5px;
+  padding:3px 30px !important;
+  font-size: 13px;
+  margin:0 20px;
+}
+a.btn-link-light{
+  color:#989898;
+  text-decoration: underline;
+  transition: all 0.2s;
+}
+a.btn-link-light:hover{
+  color:white;
+  text-decoration: underline;
+  transition: all 0.2s;
+}
+/* Header */
+#header {
+  background: #333333 !important;
+  box-shadow: 0px 7px 24px 0px rgba(0,0,0,0.21);
+}
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 40px;
+    height: 40px;
+    font-family: "sftext";
+    padding-top: 0;
+}
+.navbar{
+  padding:0px 16px;
+}
+.navbar-toggler,.navbar-toggler:focus{
+  border:0;
+  outline: none;
+  color:white !important;
+}
+#header_title{
+  color:white;
+  left:0;
+  font-family: "sfdisplayb" !important;
+}
+.nav-item{
+  padding:0 30px;
+  font-size: 13px;
+}
+
+/* Main section */
+main {
+  margin-top:40px;
+  background: white;
+}
+section#landing{
+  width: 100%;
+}
+section#landing .jumbotron{
+  align-items: center;
+  background: white;
+  position:relative;
+  z-index:3
+}
+section#landing .jumbotron .lead{
+  padding:30px 0;
+}
+#landing-image{
+  animation-name: spin;
+  animation-duration: 16000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+/* Video launching */
+#video-trigger{
+  position:relative;
+  transition: 0.8s;
+}
+#video-trigger .icon {
+  z-index: 3;
+  position: absolute;
+  opacity: 0;
+  width: 20%;
+  height:20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.8s ease-in-out;
+}
+#video-trigger #landing-image{
+  z-index: 2;
+  position: relative;
+}
+#video-trigger:hover {
+  transform: rotate(360deg);
+  transition: all 0.8s ease-in;
+}
+#video-trigger:hover .icon {
+  opacity: 1;
+  width: 50%;
+  height:50%;
+  transition: all 0.8s ease-in;
+}
+#modalvideo .modal-dialog{
+  max-width: none;
+  display: flex;
+  justify-content: center;
+}
+.pulse{
+  z-index: 1;
+  position:absolute;
+  background: black;
+  width: 300px;
+  height:300px;
+  border-radius: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 rgba(0,0,0, 0.4);
+  animation: pulse 10s infinite;
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(0,112,201, 0.4);
+    box-shadow: 0 0 0 0 rgba(0,112,201, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 200px rgba(0,112,201, 0);
+      box-shadow: 0 0 0 200px rgba(0,112,201, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(0,112,201, 0);
+      box-shadow: 0 0 0 0 rgba(0,112,201, 0);
+  }
+}
+/* Banner */
+#banner{
+  margin-top: -32px;
+  height:500px;
+  background-image: url("../images/hp-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#banner h3{
+  margin:0;
+  padding:50px 20px;
+  background:rgba(0,0,0,0.75);;
+  color:white;
+  border-radius: 25px;
+  box-shadow: 0px 7px 24px 0px rgba(0,0,0,0.21);
+}
+
+/* Features */
+#features {
+  padding: 50px 0;
+  background: #e9ecef;
+}
+#features .card{
+  width:32%;
+  flex:none;
+  flex-direction: column-reverse;
+  padding: 0;
+}
+#features .card .card-body{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+/* Specs */
+#specs-visible{
+  box-sizing: border-box;
+  background-image: url("../images/specs-1.jpg");
+  background-position: center;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-color:#fafafa;
+}
+#specs-visible .container{
+  height: 500px;
+  padding: 50px 0;
+}
+#specs-visible .container .card{
+  background:none;
+  border: 0;
+}
+
+/* Footer */
+footer{
+  background: #333333;
+  padding-top:50px;
+}
+footer #disclaimer{
+  color:white;
+  font-size: 12px;
+  padding-bottom: 20px;
+  border-bottom: solid 2px rgba(255,255,255,0.5);
+}
+footer #header-features figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  background-clip: padding-box;
+  border: 10px solid transparent;
+  border-radius: 50px;
+}
+footer #footer-info{
+  color:white;
+}
+/* XS > MD */
+@media (min-width: 0px) and (max-width: 768px) {
+  #video-trigger .icon {
+    opacity: 1;
+  }
+  #modalvideo video {
+    width: 100%;
+  }
+  #features .container{
+    flex-direction: column;
+  }
+  #features .card{
+    width:100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* MD > LG */
+@media (min-width: 768px) and (max-width: 992px) {
+  #video-trigger .icon {
+    opacity: 1;
+  }
+  #modalvideo video {
+    width: 100%;
+  }
+  #features .container{
+    flex-direction: column;
+  }
+  #features .card{
+    width:100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* LG et + */
+@media (min-width: 992px) {
+  .nav-item{
+    border-bottom: solid #333 0px;
+    transition: all 0.2s;
+  }
+  .nav-item:hover{
+    border-bottom: solid #cccccc 3px;
+    transition: all 0.2s;
+  }
+  .nav-item.active{
+    border-bottom: solid white 3px;
+  }
+  .nav-item:last-child:hover{
+    border:0;
+  }
+  #videotrigger .icon {
+    top:50%;
+  }
+  #modalvideo video {
+    width: 80%;
+    margin-top:200px;
+  }
+}
