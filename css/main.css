@@ -63,7 +63,7 @@ a.btn-link-light:hover{
 }
 .navbar-brand,
 .navbar-nav li a {
-    line-height: 40px;
+    line-height: 44px;
     height: 40px;
     font-family: "sftext";
     padding-top: 0;
@@ -77,9 +77,14 @@ a.btn-link-light:hover{
   color:white !important;
 }
 #header_title{
-  color:white;
+  margin: 0;
   left:0;
+}
+#header_title a{
+  text-decoration: none;
+  color: white;
   font-family: "sfdisplayb" !important;
+  font-size: 16px;
 }
 .nav-item{
   padding:0 30px;
@@ -203,13 +208,17 @@ section#landing .jumbotron .lead{
   justify-content: center;
   align-items: center;
 }
-#banner h3{
+#banner #banner-bloc{
   margin:0;
   padding:50px 20px;
-  background:rgba(0,0,0,0.75);;
+  background:rgba(0,0,0,0.75);
   color:white;
   border-radius: 25px;
   box-shadow: 0px 7px 24px 0px rgba(0,0,0,0.21);
+}
+#banner h3{
+  color:white;
+  margin-bottom: 15px
 }
 
 /* Features */
@@ -250,19 +259,20 @@ section#landing .jumbotron .lead{
 /* Footer */
 footer{
   background: #333333;
-  padding-top:50px;
+  padding-top:30px;
 }
 footer #disclaimer{
   color:white;
   font-size: 12px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
   border-bottom: solid 2px rgba(255,255,255,0.5);
 }
 footer #header-features figure{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
   background: white;
   background-clip: padding-box;
   border: 10px solid transparent;
