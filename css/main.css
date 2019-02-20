@@ -260,6 +260,11 @@ section#landing .jumbotron .lead{
   padding-top: 20px;
 }
 
+/* Buy */
+#buy-visible{
+  background: #fafafa;
+}
+
 /* Footer */
 footer{
   background: #333333;
