@@ -143,8 +143,8 @@ section#landing .jumbotron .lead{
   z-index: 3;
   position: absolute;
   opacity: 0;
-  width: 20%;
-  height:20%;
+  width: 100px;
+  height:100px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -160,8 +160,8 @@ section#landing .jumbotron .lead{
 }
 #video-trigger:hover .icon {
   opacity: 1;
-  width: 30%;
-  height:30%;
+  width: 130px;
+  height:130px;
   transition: all 0.8s ease-in;
 }
 #modalvideo .modal-dialog{
@@ -172,7 +172,6 @@ section#landing .jumbotron .lead{
 .pulse{
   z-index: 1;
   position:absolute;
-  background: black;
   width: 300px;
   height:300px;
   border-radius: 200px;
@@ -372,6 +371,10 @@ footer #footer-info{
   }
   #buy-details{
     margin-top: 20px;
+  }
+  .pulse{
+    width: 50% ;
+    height: 50%;
   }
 }
 
