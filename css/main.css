@@ -299,7 +299,7 @@ section#landing .jumbotron .lead{
   border-radius: 14px;
   cursor: pointer;
   transition: all 0.2s;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 #buy-applecare.applecare-selected{
   background: white;
@@ -341,7 +341,7 @@ footer #footer-features figure{
   background: white;
   background-clip: padding-box;
   border: 10px solid transparent;
-  border-radius: 50%;
+  border-radius: 14px;
 }
 footer #footer-info{
   padding-top: 10px;
