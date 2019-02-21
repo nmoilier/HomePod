@@ -280,14 +280,12 @@ section#landing .jumbotron .lead{
   box-sizing: border-box;
   color:white;
   padding: 10px;
-  border-radius: 25px;
 }
 #buy-details .color-select:last-child{
   background: white;
   box-sizing: border-box;
   color:#333333;
   padding: 10px;
-  border-radius: 25px;
 }
 #buy-details .color-select.color-active{
   text-decoration: underline;
@@ -297,7 +295,7 @@ section#landing .jumbotron .lead{
 }
 #buy-applecare{
   padding: 20px;
-  border-radius: 25px;
+  border-radius: 14px;
   cursor: pointer;
   transition: all 0.2s;
   margin: 20px 0;
