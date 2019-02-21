@@ -1,9 +1,15 @@
 $('.carousel').carousel({
   interval: false
 })
-$('.color-select').click(function(){
-  $('.carousel').carousel('next')
-  $('#buy-colors .color-select').toggleClass('color-active')
+$('.color-select:first-child').click(function(){
+  $('.carousel').carousel(0)
+  $('#buy-colors .color-select:last-child').removeClass('color-active')
+  $('#buy-colors .color-select:first-child').addClass('color-active')
+})
+$('.color-select:last-child').click(function(){
+  $('.carousel').carousel(1)
+  $('#buy-colors .color-select:first-child').removeClass('color-active')
+  $('#buy-colors .color-select:last-child').addClass('color-active')
 })
 $('#del-applecare-btn').hide()
 $('#buy-applecare').click(function(){
