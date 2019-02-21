@@ -134,6 +134,11 @@ section#landing .jumbotron .lead{
         transform:rotate(360deg);
     }
 }
+
+#piano {
+	background: #333 !important;
+}
+
 /* Video launching */
 #video-trigger{
   position:relative;
