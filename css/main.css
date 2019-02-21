@@ -319,6 +319,11 @@ section#landing .jumbotron .lead{
   transition: all 0.2s;
 }
 
+/* Compatibilité */
+#comp-visible{
+  margin-top:80px;
+}
+
 /* Footer */
 footer{
   background: #333333;
