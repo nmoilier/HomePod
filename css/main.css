@@ -218,7 +218,7 @@ section#landing .jumbotron .lead{
 }
 #banner h3{
   color:white;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 /* Features */
@@ -241,6 +241,7 @@ section#landing .jumbotron .lead{
 /* Specs */
 #specs-visible{
   background-color:#fafafa;
+  padding-top: 30px;
 }
 #specs-visible #specs-img{
   display: flex;
@@ -263,6 +264,60 @@ section#landing .jumbotron .lead{
 /* Buy */
 #buy-visible{
   background: #fafafa;
+  padding: 50px 0;
+}
+#buy-details h1 {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+#buy-details>.text-secondary{
+  padding-bottom:20px;
+}
+#buy-details .color-select:hover {
+  text-decoration: none;
+}
+#buy-details .color-select:first-child{
+  background: #333333;
+  box-sizing: border-box;
+  color:white;
+  padding: 10px;
+}
+#buy-details .color-select:last-child{
+  background: white;
+  box-sizing: border-box;
+  color:#333333;
+  padding: 10px;
+}
+#buy-details .color-select.color-active{
+  text-decoration: underline;
+}
+#buy-colors{
+  margin-bottom: 30px;
+}
+#buy-applecare{
+  padding: 20px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 20px;
+}
+#buy-applecare.applecare-selected{
+  background: white;
+  transition: all 0.2s;
+}
+#buy-applecare.applecare-selected h6{
+  color:#5fb8ff;
+  transition: all 0.2s;
+}
+#buy-applecare img{
+  width:30px;
+  height: 30px;
+}
+#buy-applecare h4,#buy-applecare h6{
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
 /* Footer */
@@ -275,7 +330,8 @@ footer #disclaimer{
   font-size: 12px;
   padding-bottom: 30px;
   padding-left: 20px;
-  border-bottom: solid 2px rgba(255,255,255,0.5);
+  border-bottom: solid 2px rgba(255,255,255,0.2);
+  margin-bottom: 30px;
 }
 footer #footer-features figure{
   display: flex;
@@ -285,9 +341,10 @@ footer #footer-features figure{
   background: white;
   background-clip: padding-box;
   border: 10px solid transparent;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 footer #footer-info{
+  padding-top: 10px;
   color:white;
 }
 /* XS > MD */
@@ -312,6 +369,9 @@ footer #footer-info{
   #specs-visible #specs-img img{
     width:80%;
     height: 80%;
+  }
+  #buy-details{
+    margin-top: 20px;
   }
 }
 
