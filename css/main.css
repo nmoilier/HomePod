@@ -200,6 +200,9 @@ section#landing .jumbotron .lead{
       box-shadow: 0 0 0 0 rgba(0,112,201, 0);
   }
 }
+#piano,#piano h3{
+  color:white;
+}
 /* Banner */
 #banner{
   margin-top: -32px;
