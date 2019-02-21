@@ -321,7 +321,8 @@ section#landing .jumbotron .lead{
 
 /* Compatibilité */
 #comp-visible{
-  margin-top:80px;
+  padding:80px 30px;
+  background: #fafafa;
 }
 
 /* Footer */
