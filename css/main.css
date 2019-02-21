@@ -327,8 +327,13 @@ section#landing .jumbotron .lead{
 
 /* Compatibilité */
 #comp-visible{
-  padding:80px 30px;
+  padding:30px 30px;
   background: #fafafa;
+}
+#comp-visible .siri{
+  background: -webkit-linear-gradient(right, #777dff 0px, #f154ff 200px, #f0357c 400px),-webkit-linear-gradient(left, #777dff 0px, #497ce2 200px, #37bdde 400px);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Footer */
